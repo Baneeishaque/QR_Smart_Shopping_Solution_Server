@@ -1,2 +1,2 @@
 <?php
-$con=new mysqli("localhost","root","","smartappqrcode");
+$con = new mysqli("localhost", "root", "", "smartappqrcode");

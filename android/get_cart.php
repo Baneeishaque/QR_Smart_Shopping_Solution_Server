@@ -9,9 +9,8 @@ $bill_id_sql = "SELECT `cartID`, `ItemID`, `Quantity`, `Unitamount`, `Total`, `u
 
 $result = $con->query($bill_id_sql);
 
-$emptyarray=array();
-while ($row = mysqli_fetch_assoc($result))
-{
-    $emptyarray[]=$row;
+$emptyarray = array();
+while ($row = mysqli_fetch_assoc($result)) {
+    $emptyarray[] = $row;
 }
 echo json_encode($emptyarray);
